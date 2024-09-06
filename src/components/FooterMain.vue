@@ -116,7 +116,7 @@ export default defineComponent({
     <div class="text-center py-[32px]">
       <p class="text-color-gray-500 mobile-caption px-[50px] md:desktop-caption">
         &copy;{{ currentYear }} - Todos los derechos reservados | Desarrollado
-        por iCeDigital
+        por iCe-Digital
       </p>
     </div>
   </div>

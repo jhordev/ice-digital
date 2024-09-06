@@ -5,7 +5,7 @@
     <div class="flex flex-col items-center gap-[16px]">
       <span
         class="text-center mobile-caption md:desktop-caption text-color-gray-50 border-[1px] border-color-primary-500 px-[16px] py-[8px] rounded-[40px]"
-        >Bienvenido al Portafolio de iCeDigital</span
+        >Bienvenido al Portafolio de iCe-Digital</span
       >
       <h1
         class="mobile-heading-1 md:desktop-heading-1 md:px-[20px] text-color-gray-50 text-center"
@@ -14,7 +14,7 @@
       </h1>
     </div>
     <p class="mobile-body md:desktop-body text-center text-color-gray-500 px-0 md:px-[20px]">
-      En iCeDigital, convertimos tus ideas en soluciones tecnológicas
+      En iCe-Digital, convertimos tus ideas en soluciones tecnológicas
       innovadoras. Desde la concepción hasta la implementación, estamos contigo
       en cada paso del camino.
     </p>

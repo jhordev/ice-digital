@@ -32,7 +32,7 @@
           </div>
         </div>
         <p class="text-color-gray-500 mobile-body md:desktop-body">
-          Trabajar con IceDigital fue un cambio absoluto para nosotros. Su
+          Trabajar con iCe-Digital fue un cambio absoluto para nosotros. Su
           equipo creativo dio vida a nuestra marca con un impresionante rediseño
           del sitio web que impulsó inmediatamente nuestra presencia en línea.
         </p>
@@ -56,7 +56,7 @@
           </div>
         </div>
         <p class="text-color-gray-500 mobile-body md:desktop-body">
-          Trabajar con IceDigital fue un cambio absoluto para nosotros. Su
+          Trabajar con iCe-Digital fue un cambio absoluto para nosotros. Su
           equipo creativo dio vida a nuestra marca con un impresionante rediseño
           del sitio web que impulsó inmediatamente nuestra presencia en línea.
         </p>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <p class="text-color-gray-500 mobile-body md:desktop-body">
-          Trabajar con IceDigital fue un cambio absoluto para nosotros. Su
+          Trabajar con iCe-Digital fue un cambio absoluto para nosotros. Su
           equipo creativo dio vida a nuestra marca con un impresionante rediseño
           del sitio web que impulsó inmediatamente nuestra presencia en línea.
         </p>
