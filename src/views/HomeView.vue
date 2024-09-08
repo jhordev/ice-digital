@@ -21,9 +21,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <!-- Contenedor principal con posición relativa para crear un contexto de apilamiento -->
   <div class="relative bg-color-bg-1">
-    <!-- Ajustar z-index con Tailwind CSS directamente en el HTML -->
     <div
       class="container-bluers absolute hidden md:block right-[-150px] top-[400px] w-[310px] h-[310px] bg-color-purple blur-[294px] rounded-full z-0"
     ></div>
@@ -41,7 +39,6 @@ export default defineComponent({
       class="container-bluers absolute hidden md:block right-[-150px] top-[3300px] w-[310px] h-[310px] bg-color-purple blur-[294px] rounded-full z-0"
     ></div>
 
-    <!-- Aquí, el z-index mayor se asegura de que main esté por encima de los círculos -->
     <main
       class="flex flex-col items-center pt-[56px] gap-[100px] md:gap-[130px] z-10 relative"
     >

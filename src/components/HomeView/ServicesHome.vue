@@ -1,8 +1,22 @@
+<script lang="ts">
+import { defineComponent, computed } from "vue";
+import { useRoute } from "vue-router";
+export default defineComponent({
+  setup() {
+    const route = useRoute();
+    const isRootRoute = computed(() => route.path === "/");
+
+    return {
+      isRootRoute,
+    };
+  },
+});
+</script>
 <template>
   <section
     class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] md:px-0 container-body"
   >
-    <div class="flex flex-col items-center gap-[16px]">
+    <div v-if="isRootRoute" class="flex flex-col items-center gap-[16px]">
       <span class="mobile-caption md:desktop-caption text-color-primary-500"
         >Nuestros Servicios</span
       >
@@ -12,7 +26,12 @@
         Nuestro Dominio Digital a su servicio
       </h2>
     </div>
-    <div class="grid grid-cols-1 gap-[32px] md:grid-cols-3">
+    <div v-else class="w-full">
+      <h1 class="mobile-heading-1 text-color-gray-50 md:desktop-heading-1">
+        Nuestros Servicios
+      </h1>
+    </div>
+    <div class="grid grid-cols-1 gap-[32px] md:grid-cols-2 lg:grid-cols-3">
       <div
         class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]"
       >
@@ -67,5 +86,5 @@
     </div>
   </section>
 </template>
-<script lang="ts"></script>
+
 <style scoped></style>

@@ -1,8 +1,23 @@
+<script lang="ts">
+import { defineComponent, computed } from "vue";
+import { useRoute } from "vue-router";
+
+export default defineComponent({
+  setup() {
+    const route = useRoute();
+    const isRootRoute = computed(() => route.path === "/");
+
+    return {
+      isRootRoute,
+    };
+  },
+});
+</script>
 <template>
   <section
     class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] md:px-0 container-body"
   >
-    <div class="flex flex-col items-center gap-[16px]">
+    <div v-if="isRootRoute" class="flex flex-col items-center gap-[16px]">
       <span class="mobile-caption md:desktop-caption text-color-primary-500"
         >Nuestro Trabajo</span
       >
@@ -12,7 +27,12 @@
         Revelando nuestras crónicas creativas
       </h2>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[32px] w-full">
+    <div v-else class="w-full">
+      <h1 class="mobile-heading-1 text-color-gray-50 md:desktop-heading-1">
+        Nuestros Trabajos
+      </h1>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[32px] w-full">
       <div class="flex flex-col gap-[16px]">
         <div class="h-[220px] md:h-[417px]">
           <img
@@ -58,8 +78,14 @@
         >
       </div>
     </div>
-    <router-link to="/projects" class="py-[15px] px-[30px] flex items-center justify-center border-[1px] border-color-primary-500 text-color-gray-50 mobile-body md:desktop-body rounded-[50px] w-full md:w-fit">Más Proyectos</router-link>
+    <router-link
+      v-if="isRootRoute"
+      to="/projects"
+      class="py-[15px] px-[30px] flex items-center justify-center border-[1px] border-color-primary-500 text-color-gray-50 mobile-body md:desktop-body rounded-[50px] w-full md:w-fit"
+    >
+      Más Proyectos
+    </router-link>
   </section>
 </template>
-<script lang="ts"></script>
+
 <style scoped></style>

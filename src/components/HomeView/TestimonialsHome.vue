@@ -12,7 +12,7 @@
         Lo que dicen nuestros clientes
       </h2>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-[32px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[32px]">
       <div
         class="flex flex-col gap-[16px] p-[24px] rounded-[20px] bg-color-bg-2"
       >

@@ -36,7 +36,7 @@
               </li>
               <li>
                 <router-link
-                  to="/work"
+                  to="/projects"
                   class="text-color-gray-200 md:text-color-gray-500 hover:text-color-gray-50"
                   active-class="active-link"
                   @click="toggleNav"
@@ -57,7 +57,7 @@
           <div class="flex flex-col md:flex-row gap-[10px] w-full md:w-auto">
             <button
               @click="toggleNav"
-              class="px-[30px] py-[15px] mobile-heading-4 md:desktop-caption text-color-primary-500 bg-gray-200 md:bg-color-primary-500 md:hover:bg-color-primary-600 rounded-[50px] md:text-color-gray-50"
+              class="md:hidden lg:flex px-[30px] py-[15px] mobile-heading-4 md:desktop-caption text-color-primary-500 bg-gray-200 md:bg-color-primary-500 md:hover:bg-color-primary-600 rounded-[50px] md:text-color-gray-50"
             >
               <router-link to="/contact">Contáctanos</router-link>
             </button>
@@ -111,7 +111,7 @@ export default defineComponent({
     };
 
     const checkIfMobile = () => {
-      isMobile.value = window.innerWidth < 768; // 768px es un típico breakpoint para mobile
+      isMobile.value = window.innerWidth < 768; 
     };
 
     const updateMenuPosition = () => {
@@ -169,13 +169,12 @@ export default defineComponent({
 }
 
 .container-menu {
-  /* Ajustes para el botón del menú */
   transition: all 0.3s ease;
-  z-index: 50; /* Asegurando que el menú esté encima del nav */
+  z-index: 50;
 }
 
 .container-menu:hover {
-  transform: scale(1.1); /* Efecto de hover en el botón */
+  transform: scale(1.1);
 }
 
 .icon-change-enter-active,
