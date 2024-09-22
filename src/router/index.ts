@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue';
 import ProjectsView from '../views/ProjectsView.vue';
 import ServicesView from '../views/ServicesView.vue';
 import ContactView from '../views/ContactView.vue';
+import CaseView from '../views/CaseView.vue';
 import { logError } from '@/utils/logger';
 
 const routes: Array<RouteRecordRaw> = [
@@ -33,14 +34,27 @@ const routes: Array<RouteRecordRaw> = [
     component: ContactView
   },
   {
+    path: '/caso:proyectoId',
+    name: 'caso',
+    component: CaseView
+  },
+  {
     path: '/:pathMatch(.*)*',
     redirect: '/'
   }
+
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve({ top: 0 });
+      }, 300); // Espera 300 ms antes de hacer scroll
+    });
+  }
 });
 
 router.onError((error) => {
