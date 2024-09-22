@@ -5,7 +5,25 @@ import DescriptionCase from "@/components/CaseView/DescriptionCase.vue";
 import CallAction from "@/components/CallAction.vue";
 import StepItem from "@/components/CaseView/StepItem.vue";
 
-const proyectos = {
+interface ProjectInfo {
+  problema: string;
+  objetivo: string;
+  solucion: string;
+  metodologia: string;
+  imgtitle: string;
+  imgmedium: string;
+  estado: number;
+}
+
+interface Project {
+  id: string;
+  nombre: string;
+  servicios: string[];
+  img: string;
+  info: ProjectInfo;
+}
+
+const proyectos: Record<string, Project> = {
   "proyecto-1": {
     id: "proyecto-1",
     nombre: "MotoCuy - Aplicativo de Movilidad para Mototaxis Formales",
@@ -64,15 +82,13 @@ const proyectos = {
   }
 };
 
-
-
 export default defineComponent({
   name: "CaseView",
   components: {
     InitialCase,
     DescriptionCase,
     CallAction,
-    StepItem
+    StepItem,
   },
   data() {
     return {
@@ -84,22 +100,27 @@ export default defineComponent({
         { number: 5, status: "Despliegue" },
         { number: 6, status: "Mantenimiento" },
       ],
-      selectedProject: null, // Añadido para almacenar el proyecto seleccionado
+      selectedProject: null as Project | null,
     };
   },
   created() {
-    const projectId = this.getProjectIdFromUrl(); // Extrae el ID del proyecto
-    this.selectedProject = proyectos[projectId]; // Asigna el proyecto basado en el ID
+    const projectId = this.getProjectIdFromUrl();
+    if (typeof projectId === "string" && proyectos[projectId]) {
+      this.selectedProject = proyectos[projectId];
+    } else {
+      console.error("Proyecto no encontrado o ID inválido");
+    }
 
-    console.log(projectId); // Muestra el proyectoId en la consola
+    console.log(projectId);
   },
   methods: {
-    getProjectIdFromUrl() {
-      return this.$route.params.proyectoId; // Extrae el proyectoId desde los parámetros de la ruta
-    }
-  }
-})
+    getProjectIdFromUrl(): string {
+      return this.$route.params.proyectoId as string;
+    },
+  },
+});
 </script>
+
 <template>
   <div class="relative bg-color-bg-1">
     <main class="flex flex-col items-center pt-[56px] gap-[50px] md:gap-[80px] lg:gap-[100px] z-10 relative">
@@ -110,7 +131,7 @@ export default defineComponent({
           :solucion="selectedProject?.info.solucion"
           :img="selectedProject?.info.imgmedium"
       />
-      <section class="w-full px-[20px] lg:px-0 container-body flex items-center justify-center h-auto">
+      <section class="hidden w-full px-[20px] lg:px-0 container-body lg:flex items-center justify-center h-auto">
         <header class="flex flex-col text-xl font-bold tracking-wide text-center text-white whitespace-nowrap w-full">
           <div class="flex relative flex-col w-full min-h-[95px] max-md:max-w-full">
             <div class="w-full h-[20px] bg-color-bg-2">
