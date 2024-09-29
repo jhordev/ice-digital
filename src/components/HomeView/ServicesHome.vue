@@ -16,24 +16,24 @@ export default defineComponent({
   <section
     class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] md:px-0 container-body"
   >
-    <div v-if="isRootRoute" class="flex flex-col items-center gap-[16px]">
-      <span class="mobile-caption md:desktop-caption text-color-primary-500"
+    <div v-if="isRootRoute" class="flex flex-col items-center gap-[16px]" >
+      <span class="mobile-caption md:desktop-caption text-color-primary-500" data-aos="zoom-in-up"
         >Nuestros Servicios</span
       >
       <h2
-        class="mobile-heading-2 md:desktop-heading-2 text-color-gray-50 text-center"
+        class="mobile-heading-2 md:desktop-heading-2 text-color-gray-50 text-center" data-aos="zoom-in-up"
       >
         Nuestro Dominio Digital a su servicio
       </h2>
     </div>
     <div v-else class="w-full">
-      <h1 class="mobile-heading-1 text-color-gray-50 md:desktop-heading-1">
+      <h1 class="mobile-heading-1 text-color-gray-50 md:desktop-heading-1" data-aos="zoom-in-up">
         Nuestros Servicios
       </h1>
     </div>
     <div class="grid grid-cols-1 gap-[32px] md:grid-cols-2 lg:grid-cols-3">
       <div
-        class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]"
+        class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]" data-aos="zoom-in-up"
       >
         <div class="p-[12px] bg-color-primary-500 rounded-[20px]">
           <span
@@ -50,7 +50,7 @@ export default defineComponent({
         </p>
       </div>
       <div
-        class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]"
+        class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]" data-aos="zoom-in-up"
       >
         <div class="p-[12px] bg-color-primary-500 rounded-[20px]">
           <span
@@ -67,7 +67,7 @@ export default defineComponent({
         </p>
       </div>
       <div
-        class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]"
+        class="flex flex-col gap-[16px] items-start w-full p-[24px] bg-color-bg-2 rounded-[20px]" data-aos="zoom-in-up"
       >
         <div class="p-[12px] bg-color-primary-500 rounded-[20px]">
           <span

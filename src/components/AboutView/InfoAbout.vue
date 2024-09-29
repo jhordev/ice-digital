@@ -1,6 +1,9 @@
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 <template>
   <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
     class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] lg:px-0 container-body"
   >
     <div class="flex flex-col lg:items-center gap-[32px] lg:flex-row">

@@ -55,15 +55,17 @@
             </ul>
           </nav>
           <div class="flex flex-col md:flex-row gap-[10px] w-full md:w-auto">
+            <router-link to="/contact">
             <button
               @click="toggleNav"
               class="md:hidden lg:flex px-[30px] py-[15px] mobile-heading-4 md:desktop-caption text-color-primary-500 bg-gray-200 md:bg-color-primary-500 md:hover:bg-color-primary-600 rounded-[50px] md:text-color-gray-50"
             >
-              <router-link to="/contact">Contáctanos</router-link>
+              Contáctanos
             </button>
+            </router-link>
             <button
               @click="toggleNav"
-              class="px-[30px] py-[15px] mobile-heading-4 md:desktop-caption border-[1px] border-gray-200 md:border-color-primary-500 rounded-[50px] text-color-primary-50 hover:text-color-primary-500 md:hover:text-color-primary-50 hover:bg-gray-200 md:hover:bg-color-primary-600"
+              class="hidden px-[30px] py-[15px] mobile-heading-4 md:desktop-caption border-[1px] border-gray-200 md:border-color-primary-500 rounded-[50px] text-color-primary-50 hover:text-color-primary-500 md:hover:text-color-primary-50 hover:bg-gray-200 md:hover:bg-color-primary-600"
             >
               <router-link to="/admin">Iniciar Sesión</router-link>
             </button>

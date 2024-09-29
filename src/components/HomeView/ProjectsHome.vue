@@ -71,6 +71,8 @@ export default defineComponent({
 
 <template>
   <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
       class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] md:px-0 container-body"
   >
     <div v-if="isRootRoute" class="flex flex-col items-center gap-[16px]">
@@ -85,7 +87,7 @@ export default defineComponent({
       </h1>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-[32px] w-full">
-      <div class="flex flex-col gap-[16px]" v-for="proyecto in proyectos" :key="proyecto.id">
+      <div class="flex flex-col gap-[16px]" v-for="proyecto in proyectos" :key="proyecto.id" data-aos="zoom-in-up">
         <div class="h-[220px] md:h-[417px] overflow-hidden rounded-[20px]">
           <img
               :src="require(`@/assets/img/${proyecto.img}`)"
@@ -110,11 +112,35 @@ export default defineComponent({
     <router-link
         v-if="isRootRoute"
         to="/projects"
-        class="py-[15px] px-[30px] flex items-center justify-center border-[1px] border-color-primary-500 text-color-gray-50 mobile-body md:desktop-body rounded-[50px] w-full md:w-fit"
+        class="hover-bg-expand py-[15px] px-[30px] flex items-center justify-center border-[1px] border-color-primary-500 text-color-gray-50 mobile-body md:desktop-body rounded-[50px] w-full md:w-fit"
     >
       Más Proyectos
     </router-link>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+.hover-bg-expand {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hover-bg-expand::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #007BFF;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.hover-bg-expand:hover::before {
+  height: 100%;
+}
+
+</style>

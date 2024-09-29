@@ -1,14 +1,15 @@
 <template>
   <section
-    class="max-w-[1028px] grid grid-cols-2 md:grid-cols-4 gap-[20px]  place-items-center px-[20px] lg:px-0 container-body"
+    class="max-w-[1028px] flex flex-wrap justify-between items-center gap-[20px]  place-items-center px-[20px] lg:px-0 container-body"
   >
     <div
-      class="space-y-4 md:space-y-0 md:space-x-4"
+      class="space-y-3 md:space-y-0 md:space-x-3"
+      data-aos="zoom-in-up" data-aos-delay="50" data-aos-offset="0"
       v-for="(company, index) in companies"
       :key="index"
     >
       <h2
-        class="mobile-heading-3 md:desktop-heading-3 img-filter text-color-gray-700 hover:text-color-gray-50"
+        class="cursor-default mobile-heading-3 md:desktop-heading-3 img-filter text-color-gray-700 hover:text-color-gray-50"
       >
         {{ company }}
       </h2>
@@ -21,10 +22,10 @@ export default {
   data() {
     return {
       companies: [
-        "Empresa 1",
-        "Empresa 2",
-        "Empresa 3",
-        "Empresa 4",
+        "Latam Digital",
+        "Milk App",
+        "Educanet",
+          "Moto Cuy"
       ],
     };
   },

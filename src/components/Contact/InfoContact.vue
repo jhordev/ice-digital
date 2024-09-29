@@ -43,6 +43,8 @@ export default defineComponent({
 </script>
 <template>
   <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
     class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] md:px-0 container-body"
   >
     <div class="w-full">

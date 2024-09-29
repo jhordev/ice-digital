@@ -2,7 +2,7 @@
   <section
     class="max-w-[1028px] grid grid-cols-1 lg:grid-cols-2 items-center gap-[32px] md:gap-[80px] px-[20px] md:px-0 container-body"
   >
-    <div class="flex flex-col gap-[24px]">
+    <div class="flex flex-col gap-[24px] h-full justify-center" data-aos="fade-right">
       <div class="flex flex-col items-start gap-[16px]">
         <span class="mobile-caption md:desktop-caption text-color-primary-500"
           >Sobre Nosotros</span
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div class="h-[326px] lg:h-[560px]">
+    <div class="h-[326px] lg:h-[560px]" data-aos="fade-left" >
       <img
         src="@/assets/img/abouthome.jpg"
         alt="Imagen de un equipo trabajando"
@@ -42,5 +42,6 @@
     </div>
   </section>
 </template>
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 <style scoped></style>

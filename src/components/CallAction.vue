@@ -1,9 +1,10 @@
 <template>
   <section
     class="max-w-[1028px] flex flex-col items-center gap-[32px] px-[20px] py-[64px] md:px-0 container-body"
+    data-aos="zoom-in-up"
   >
     <div class="flex flex-col items-center gap-[16px]">
-      <h2 class="mobile-heading-2 md:desktop-heading-2 text-white text-center">
+      <h2 class="mobile-heading-2 md:desktop-heading-2 text-white text-center" >
         Listo para comenzar tu proyecto
       </h2>
       <p class="mobile-body md:desktop-body text-color-gray-500 text-center">

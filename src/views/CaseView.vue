@@ -131,7 +131,8 @@ export default defineComponent({
           :solucion="selectedProject?.info.solucion"
           :img="selectedProject?.info.imgmedium"
       />
-      <section class="hidden w-full px-[20px] lg:px-0 container-body lg:flex items-center justify-center h-auto">
+      <section class="hidden w-full px-[20px] lg:px-0 container-body lg:flex items-center justify-center h-auto" data-aos="fade-up"
+               data-aos-anchor-placement="top-bottom">
         <header class="flex flex-col text-xl font-bold tracking-wide text-center text-white whitespace-nowrap w-full">
           <div class="flex relative flex-col w-full min-h-[95px] max-md:max-w-full">
             <div class="w-full h-[20px] bg-color-bg-2">

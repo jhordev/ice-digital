@@ -2,7 +2,9 @@
   <section class="max-w-[1028px] px-[20px] lg:px-0 container-body">
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
-      <div class="flex flex-col items-center gap-[24px] mt-[24px]">
+      <div class="flex flex-col items-center gap-[24px] mt-[24px]"
+        data-aos="fade-right"
+      >
         <h2 class="mobile-heading-2 text-color-gray-50 md:desktop-heading-2 w-full">Contexto del Proyecto</h2>
         <div class="flex flex-row items-start gap-[20px]">
           <div class="p-[15px] bg-color-primary-500 rounded-full flex">
@@ -32,8 +34,8 @@
           </div>
         </div>
       </div>
-      <div class="bg-color-bg-2 rounded-[20px] flex justify-center items-center">
-        <img :src="require(`@/assets/img/${img}.png`)" alt="Proyecto" class="w-[500px]" />
+      <div class="bg-color-bg-2 rounded-[20px] flex justify-center items-center" data-aos="fade-left">
+        <img :src="require(`@/assets/img/${img}.png`)" alt="Proyecto" class="w-[500px]" data-aos="zoom-in" data-aos-delay="300"  data-aos-offset="150"> />
       </div>
     </div>
   </section>
