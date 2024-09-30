@@ -5,6 +5,7 @@ import ProjectsView from '../views/ProjectsView.vue';
 import ServicesView from '../views/ServicesView.vue';
 import ContactView from '../views/ContactView.vue';
 import CaseView from '../views/CaseView.vue';
+import PrivacyApp from "@/views/PrivacyApp.vue";
 import { logError } from '@/utils/logger';
 
 const routes: Array<RouteRecordRaw> = [
@@ -37,6 +38,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/caso:proyectoId',
     name: 'caso',
     component: CaseView
+  },
+  {
+    path: '/privacy/ucsshub',
+    name: '/privacy',
+    component: PrivacyApp,
   },
   {
     path: '/:pathMatch(.*)*',
