@@ -20,22 +20,22 @@ const proyectos = {
       estado: 20
     }
   },
-  "proyecto-2": {
-    id: "proyecto-2",
-    nombre: "Milk App - Gestión Integral para Empresas Lecheras",
-    servicios: [
-      "Diseño UI/UX",
-      "Desarrollo de App",
-    ],
-    img: "cover-lechero.jpg",
-    info: {
-      problema: "Milk App aborda el problema de la falta de una plataforma centralizada para la gestión de procesos en empresas lecheras, lo que resulta en ineficiencias y una difícil supervisión de las operaciones. La falta de datos en tiempo real puede llevar a decisiones ineficaces y a una pérdida de oportunidades de mejora.",
-      objetivo: "Crear una solución integral que permita a las empresas lecheras gestionar sus operaciones de manera eficiente, mejorando la toma de decisiones a través de datos en tiempo real y optimizando la cadena de suministro para aumentar la rentabilidad.",
-      solucion: "Se desarrollará Milk App, una aplicación que ofrecerá funcionalidades clave como gestión de inventarios, seguimiento de producción y análisis de datos. La aplicación estará diseñada con un enfoque en la facilidad de uso, garantizando que los usuarios puedan acceder a la información necesaria rápidamente. Utilizando tecnologías modernas, se asegurará que la aplicación sea escalable y capaz de adaptarse a las necesidades crecientes de las empresas lecheras.",
-      metodologia: "Se adoptará la metodología Agile, permitiendo iteraciones rápidas y la incorporación de feedback continuo. Esto facilitará ajustes inmediatos en el desarrollo, asegurando que la aplicación evolucione de acuerdo con las necesidades de los usuarios y el mercado.",
-      estado: 15
-    }
-  },
+  // "proyecto-2": {
+  //   id: "proyecto-2",
+  //   nombre: "Milk App - Gestión Integral para Empresas Lecheras",
+  //   servicios: [
+  //     "Diseño UI/UX",
+  //     "Desarrollo de App",
+  //   ],
+  //   img: "cover-lechero.jpg",
+  //   info: {
+  //     problema: "Milk App aborda el problema de la falta de una plataforma centralizada para la gestión de procesos en empresas lecheras, lo que resulta en ineficiencias y una difícil supervisión de las operaciones. La falta de datos en tiempo real puede llevar a decisiones ineficaces y a una pérdida de oportunidades de mejora.",
+  //     objetivo: "Crear una solución integral que permita a las empresas lecheras gestionar sus operaciones de manera eficiente, mejorando la toma de decisiones a través de datos en tiempo real y optimizando la cadena de suministro para aumentar la rentabilidad.",
+  //     solucion: "Se desarrollará Milk App, una aplicación que ofrecerá funcionalidades clave como gestión de inventarios, seguimiento de producción y análisis de datos. La aplicación estará diseñada con un enfoque en la facilidad de uso, garantizando que los usuarios puedan acceder a la información necesaria rápidamente. Utilizando tecnologías modernas, se asegurará que la aplicación sea escalable y capaz de adaptarse a las necesidades crecientes de las empresas lecheras.",
+  //     metodologia: "Se adoptará la metodología Agile, permitiendo iteraciones rápidas y la incorporación de feedback continuo. Esto facilitará ajustes inmediatos en el desarrollo, asegurando que la aplicación evolucione de acuerdo con las necesidades de los usuarios y el mercado.",
+  //     estado: 15
+  //   }
+  // },
   "proyecto-3": {
     id: "proyecto-3",
     nombre: "Educanet - Sistema Integral de Gestión Estudiantil",

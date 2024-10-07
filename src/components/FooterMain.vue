@@ -116,7 +116,7 @@ export default defineComponent({
     </footer>
     <div class="text-center py-[32px]" data-aos="zoom-in" data-aos-delay="100" data-aos-offset="0">
       <p class="text-color-gray-500 mobile-caption px-[50px] md:desktop-caption">
-        &copy;{{ currentYear }} - Todos los derechos reservados | Desarrollado
+        &copy;{{ currentYear }} | Desarrollado
         por iCe-Digital
       </p>
     </div>
