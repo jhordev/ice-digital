@@ -45,6 +45,11 @@ const routes: Array<RouteRecordRaw> = [
     component: PrivacyApp,
   },
   {
+    path: '/privacy/nexucss',
+    name: '/privacynexucss',
+    component: PrivacyApp,
+  },
+  {
     path: '/:pathMatch(.*)*',
     redirect: '/'
   }
