@@ -146,6 +146,7 @@ export default defineComponent({
           </div>
         </header>
       </section>
+      <a href="https://educanet-70549.web.app/about"  target="_blank" class="w-full md:w-auto py-[15px] px-[30px] flex justify-center items-center bg-color-primary-500 rounded-[50px] hover:bg-color-primary-600 text-color-gray-50 mobile-body md:desktop-body"> Ver sistema </a>
       <CallAction />
     </main>
   </div>

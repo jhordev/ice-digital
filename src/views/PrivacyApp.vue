@@ -2,10 +2,12 @@
 import { defineComponent } from "vue";
 import UcssHub from "@/components/PrivacyView/UcssHub.vue";
 import NexUcss from "@/components/PrivacyView/NexUcss.vue";
+import YasePrivacity from "@/components/PrivacyView/YasePrivacity.vue";
 
 export default defineComponent({
   name: "PrivacyApp",
   components: {
+    YasePrivacity,
     NexUcss,
     UcssHub,
   },
@@ -21,6 +23,9 @@ export default defineComponent({
     isNexUcssRoute(): boolean {
       return this.currentRoute === "/privacy/nexucss";
     },
+    isYasePrivacityRoute(): boolean {
+      return this.currentRoute === "/privacy/yase";
+    },
   },
 });
 </script>
@@ -33,6 +38,7 @@ export default defineComponent({
       <!-- Renderiza el componente según la ruta -->
       <NexUcss v-if="isNexUcssRoute" />
       <UcssHub v-else-if="isUcssHubRoute" />
+      <YasePrivacity v-else-if="isYasePrivacityRoute" />
     </main>
   </div>
 </template>

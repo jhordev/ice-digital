@@ -50,6 +50,11 @@ const routes: Array<RouteRecordRaw> = [
     component: PrivacyApp,
   },
   {
+    path: '/privacy/yase',
+    name: '/yaseprivacity',
+    component: PrivacyApp,
+  },
+  {
     path: '/:pathMatch(.*)*',
     redirect: '/'
   }
